@@ -63,7 +63,7 @@ We also prepare a few "quasi-features" that describe unmapped, ambiguous, and ot
 We then iterate over ``bamfile`` and examine each read::
 
    >>> for read in bamfile:
-   ...     if not r.aligned:
+   ...     if not read.aligned:
    ...         counts['notaligned'] += 1
    ...         continue
 
